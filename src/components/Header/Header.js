@@ -7,7 +7,7 @@ export class Header extends React.Component {
   render() {
     return (
       <div className={styles.header}>
-        <Link to="/"><h1 className={styles.logo}>Deskbookers</h1></Link>
+        <Link to="/"><h1 className={styles.logo}>deskbookers</h1></Link>
       </div>
     )
   }

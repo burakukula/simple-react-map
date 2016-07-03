@@ -23,11 +23,16 @@
 .itemAddress {
   min-height: 40px;
   font-weight: 300;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 22px;
 }
 .itemTitle {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
-  min-height: 40px;
+  min-height: 20px;
+  overflow: hidden;
+  margin: 10px 0;
 }
 .itemImage {
   position: relative;
@@ -40,6 +45,10 @@
   color: #fff;
   width: 75px;
   text-align: center;
+  border-radius: 0 5px 0 0;
+}
+.priceBox p {
+  margin: 10px 0;
 }
 .itemImage img{
   width: 100%;

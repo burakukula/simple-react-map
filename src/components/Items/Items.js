@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css'
+import Icons from '../Icons/Icons'
 export class Items extends React.Component {
   render() {
     if (this.props.data.rows) {
@@ -16,10 +17,10 @@ export class Items extends React.Component {
             <div className={styles.itemImage}>
               <img src={row.image_urls[0]} alt="Example Image"/>
               <div className={styles.priceBox}>
-                <p>{row.hour_price}</p>
+                <p>{row.hour_price} $</p>
               </div>
             </div>
-
+            <Icons data={row}/>
           </div>
         )
       })
