@@ -30,7 +30,7 @@ export class MapComponent extends React.Component {
   }
 
   render() {
-    // this.componentWillMount();
+    this.componentWillMount();
     return (
       <div className={styles.map}>
       <GoogleMapLoader
