@@ -18,21 +18,20 @@
   box-sizing: border-box;
   margin: 10px 10px 10px 0;
   padding: 10px;
-  min-height: 370px;
 }
 .itemAddress {
   min-height: 40px;
   font-weight: 300;
-  margin: 10px 0;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 22px;
+  margin-top: 5px;
 }
 .itemTitle {
   font-size: 15px;
   font-weight: 500;
-  min-height: 20px;
   overflow: hidden;
-  margin: 10px 0;
+  margin: 0;
 }
 .itemImage {
   position: relative;

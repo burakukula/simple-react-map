@@ -6,14 +6,14 @@ export class Icons extends React.Component {
 
       var Icons = this.props.data.facility_icons.map(icons => {
         return (
-          <div className={styles.icons}>
+          <div className={styles.box}>
             <i className={icons.icon}></i>
           </div>
         )
       })
     }
     return (
-      <div>
+      <div className={styles.icons}>
         {Icons}
       </div>
     )

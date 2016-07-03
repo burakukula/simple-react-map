@@ -16,11 +16,12 @@ export class Items extends React.Component {
             </p>
             <div className={styles.itemImage}>
               <img src={row.image_urls[0]} alt="Example Image"/>
+              <Icons data={row}/>
               <div className={styles.priceBox}>
                 <p>{row.hour_price} $</p>
               </div>
             </div>
-            <Icons data={row}/>
+
           </div>
         )
       })
