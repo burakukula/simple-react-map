@@ -27,7 +27,7 @@ var config = getConfig({
         '<html>',
           '<head>',
           '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMx8Sp3BWyNmKtGN52pYTI_JtaUnWNREU"></script>',
-          '<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">',
+          '<link href="https://fonts.googleapis.com/css?family=Raleway:300,500,600" rel="stylesheet">',
           '<script src="https://use.fontawesome.com/bc868f8550.js"></script>',
           '</head>',
           '<body>',
