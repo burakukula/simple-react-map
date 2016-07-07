@@ -5,6 +5,11 @@
   overflow-x: hidden;
   margin-top: 60px;
 }
+@media (max-width: 768px) {
+  .wraper {
+    width: 100%;
+  }
+}
 .resultHeadline {
   margin-left: 10px;
 }
