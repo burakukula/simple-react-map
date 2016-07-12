@@ -3,13 +3,30 @@ import { GoogleMapLoader, GoogleMap, Marker } from "react-google-maps";
 import styles from './styles.module.css';
 export class MapComponent extends React.Component {
 
-  state = {
-    markers: []
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+        markers: []
+    }
+  }
 
-  updateState() {
-    if (this.props.data.rows) {
-      var markers = this.props.data.rows.map(function(item, i) {
+  componentDidMount() {
+    this.getMarkers(this.props);
+  }
+
+  componentWillReceiveProps(nextProps){
+    if(this.props.data!==nextProps.data){
+      const markers = this.getMarkers(nextProps);
+      this.setState({
+         markers: markers
+      });
+    }
+  }
+
+  getMarkers(props) {
+    let markers = [];
+    if (props.data.rows) {
+      markers = props.data.rows.map(function(item, i) {
         return {
           position: {
             lat: item.coordinate[0],
@@ -17,20 +34,12 @@ export class MapComponent extends React.Component {
           },
           item: item
         }
-      }.bind(this));
-
-      this.setState({
-        markers: markers
       });
     }
-  }
-
-  componentWillMount() {
-    this.updateState();
+    return markers;
   }
 
   render() {
-    this.componentWillMount();
     return (
       <div className={styles.map}>
       <GoogleMapLoader

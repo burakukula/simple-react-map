@@ -33,9 +33,7 @@ export class Content extends React.Component {
       <div>
         <section>
           <Items data={this.state.data} />
-          <MapComponent
-            data={this.state.data}
-          />
+          <MapComponent data={this.state.data} />
         </section>
       </div>
     )
